@@ -1,2 +1,3 @@
 # andrewbanks17.github.io
-Icons made by Freepik from www.flaticon.com
+This is my website repository!<br>
+Icons made and provided by Freepik from www.flaticon.com
