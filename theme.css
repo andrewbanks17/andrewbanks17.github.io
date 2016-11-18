@@ -1,0 +1,14 @@
+body {
+    background-color: lightblue;
+}
+
+#titleName {
+    color: white;
+    text-align: center;
+    font-family: Roboto-Black;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
