@@ -1,8 +1,9 @@
 
-	
+	#wholePage {
+	}
 	#titleName {
 		color:transparent;
-		background:url(Images/circuitrySmallerDark.png)40% 20% repeat;
+		background:url(Images/circuitryTiny.png)repeat;
 		-webkit-background-clip:text;
 		-ms-background-clip:text;
 		background-clip:text;
