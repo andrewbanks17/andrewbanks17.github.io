@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--USED DAVE GAndy's Font awsome icon pack. Found here
+http://www.flaticon.com/packs/font-awesome
+-->
 	<title>Zorodome</title>
 
 	<script type="text/javascript" src="jquery-3.1.1.js"></script>
-	<script src="index.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="theme.css">
 	
 </head>
-<body id="wholePage">
 
-	<section id="splashSection">
-		<h1  id = "titleName">Andrew Banks</h1>
-		<section id="social">
-			<a href="ImportantFiles/AndrewBanksResume.pdf"><img class = "icons" src="icons32/resume-logo.png" alt="Resume"></a>
-			<a href="https://github.com/andrewbanks17"><img class = "icons" src="icons32/github-logo.png" alt="Resume"></a>
+<body>
+
+	<div id="objectHolder">
+		<section id="rain">
+			<svg width="2" height="40">
+			</svg>
 		</section>
+	</div>
+
+		<p id = "titleName">Andrew Banks</p>
+	<section id="personal">
+		<a href="ImportantFiles/AndrewBanksResume.pdf"><img class = "icons" src="icons128/png/symbol-1.png" alt="Resume"></a>
+		<a href="https://github.com/andrewbanks17"><img class = "icons" src="icons128/png/github-logo.png" alt="Github"></a>
+	</section>
+	<section class="content">
+		<nav>
+			<p style="font-size:20px;">Projects</p>
+			
+		</nav>
+
+		
+		<div class="imageSet">
+			<a href="https://github.com/andrewbanks17/AugmentedStocks-YHacks16/blob/master/README.md"><img  src="Images/yHackARPic.png" class="thumbnail" alt="Augmented Stocks" ></a>
+			<p>Augmented Stocks</p>
+		</div>
+		<div class="imageSet">
+			<a href="https://github.com/andrewbanks17/HopHacks16/blob/master/README.md">
+				<img  src="Images/test2.png" class="thumbnail" alt="Budget Tracker using IOT devices"></a>
+				<p>Budget Tracker</p>			
+			</div>
+			<!--<img  src="Images/SideProjects/ComputerLeds.jpg"  class="thumbnail" alt="Cinque Terre" width="304" height="236">
+		-->
+
+		
+	</section>
+
+	<section id="weatherControls">
+	<p style="font-size: 20px"><b><i>Weather Controller<I/</b></p>
+		<section class="controlSection">
+			<h4 id="colorHeader">Color</h4>			
+			<div class="weatherIcon" id="colorBox" onclick="toggleColor()"><span id="centerColorText">OFF</span></div>
+		</section>
+		<section class="controlSection">
+			<h4>Percipitation</h4>
+			<img onclick="toSnow()" class="weatherIcon" id="snowIcon" src="Images/snowflake.png" alt="Cinque Terre">					
+			<img onclick="toRain()" class="weatherIcon" id="rainIcon" src="Images/raindrop.png" alt="Cinque Terre">
+		</section>
+		<section class="controlSection">
+			<h4>Volume</h4>
+			<button class = "amtIc" onclick="addRain()" style="font-size: 25px; width:30px; height:30px;">+</button>
+			<button class = "amtIc" onclick="removeRain()" style="font-size: 25px; width:30px; height:30px;">-</button>
+			<button class = "amtIc" onclick="reset()" style="font-size: 25px; height:30px; ">reset</button>
+		</section>
+
+
+
+
+
+
+		<!--Anime JS script has to be loaded after all html elements have been initialized-->
+		<script src="anime.min.js"></script>
+		<script src="animation.js"></script>
 	</section>
 </body>
 </html>
