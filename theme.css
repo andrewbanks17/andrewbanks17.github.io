@@ -1,184 +1,236 @@
 
-	#wholePage {
-	}
+
+#objectHolder{
+	width:4%;
+	visibility: hidden;
+}
+
+#rain{
+	margin-top: -50px;
+	position: absolute;	
+}
+
+
+#titleName {
+	padding-top: 5px;
+	/*color:#cae9fa;*/
+	color:transparent;
+	background: url(Images/ice-textureBig.jpg)repeat;
+	-webkit-background-clip:text;
+	-ms-background-clip:text;
+	background-clip:text;
+	font-weight:900;
+	font-size:3em;
+	text-align: center;
+	font-family: arial,helvetica;
+	font-size: 60px;
+}
+#social {
+	text-align: center;
+}
+#splashSection{
+	background: #DAD2E2;
+
+}
+#rainIcon{
+	margin-left: 5px;
+}
+#weatherControls{
+	/*margin-left: 15px;*/
+	left:10px;
+	width:250px;
+	background:#101827;
+	padding:3px 3px 15px 3px;
+	/*I'll fix this later..*/
+	position:absolute;
+	bottom: 10px;
+}
+
+#colorBox{
+	background: #DAD2E2;
+	color:#161F20;
+}
+#centerColorText{
+	font-weight:bold;
+	position:absolute;	
+	margin-top:11px;
+	margin-left:5px;
+}
+#colorHeader{
+	
+	color:transparent;
+	/*background-color: #cae9fa;*/
+	background: url(Images/colorScheme3.png)repeat;
+	-webkit-background-clip:text;
+	-ms-background-clip:text;
+	background-clip:text;
+}
+#personal{	
+	width: 75%;
+	margin: auto;	
+	text-align: center;	 /*text align affects inline blocks*/
+}
+.content{
+	/*background-color:#fff;*/
+	padding-top:30px;
+	width: 75%;
+	margin: auto;		/*centers the whole section to the center. DOES NOT AFFECT elements inside though!*/
+	text-align: center;	 /*text align affects inline blocks*/
+}
+.controlSection{
+	margin:0;
+}
+.amtIc{
+	min-width:35px;
+	margin-left: 5px;
+}
+.amtIc:hover{
+	cursor: pointer;
+}
+.weatherIcon{	
+	width: 48px;
+	height: 48px;
+	margin-left: 5px;
+}
+.weatherIcon:hover{
+	cursor: pointer;
+}
+
+.imageSet{
+	margin:5px;
+	display:inline-block;
+	/*float:left;*/
+}
+.thumbnail{
+	border:5px solid #cAD2E2;
+}
+
+
+.icons{
+	transform: scale(.5);
+	transition: all .2s ease-in-out;
+
+}
+.icons:hover{
+	transform: scale(.75);
+}
+
+body {
+	font-family: verdana;
+	overflow: hidden;
+	background: #161F20;
+	color:#cae9fa;
+}
+
+p {
+	font-size: 15px;
+	margin:0px;
+}
+
+
+/* navigation start */
+a{
+	color:#cae9fa;
+	text-decoration:  none;
+}
+nav{
+	text-align: center;
+	font-family: verdana;
+	font-size: 20px;
+	margin:0 0 20px 0;
+}
+
+nav ul{
+	list-style-type:none;
+	padding:0;
+}
+
+nav ul li{
+
+}
+
+nav ul li a{
+	background-color:green;
+	border:thin solid #fff;
+	color:#fff;
+	display:block;
+	height:3em;
+	line-height:3em;
+	text-align:center;
+	text-decoration:none;
+	width:100%;
+}
+
+nav a:hover{
+	color:#FFFF99;
+}
+/* navigation end */
+
+/* footer start */
+footer{
+	background-color:orange;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	width:100%;
+}
+
+/* Stuff below is by increasing order*/
+@media only screen and (min-width: 0px) {
 	#titleName {
-		color:transparent;
-		background:url(Images/circuitryTiny.png)repeat;
-		-webkit-background-clip:text;
-		-ms-background-clip:text;
-		background-clip:text;
-		font-weight:900;
-		font-size:3em;
-		text-align: center;
-		font-family: arial,helvetica;
-		font-size: 60px;
-	}
-	#social {
-		padding-top:2em; 
-		text-align: center;
-	}
-	#splashSection{
-		padding-top:5em; 
-	}
-
-	.icons{
-		transition: all .2s ease-in-out;
-		padding:15px;		
-		transform: scale(1.5);
-
-	}
-	.icons:hover{
-		transform: scale(1.5);
-	}
-	p {
-		font-family: verdana;
 		font-size: 20px;
 	}
-
-	/*small devices*/
-	*{
-		margin:0px;
-		padding:0px
+	.thumbnail{
+		width:69px;
+		height:23px;
+	}
+	.imageSet{
+		width:79px;
 	}
 
 
-	.media1140px{
-		background-color:#CE9429;
+}
+@media only screen and (min-width: 300px) {
+	#titleName {
+		font-size: 40px;
+	}
+	.thumbnail{
+		width:135px;
+		height:90px;
+	}
+	.imageSet{
+		width:145px;
+	}
+}
+@media only screen and (min-width: 580px) {
+	#titleName {
+		font-size: 50px;
+	}
+	.thumbnail{
+		width:180px;
+		height:120px;
+	}
+	.imageSet{
+		width:190px;
+	}
+}
+@media only screen and (min-width: 720px) {
+	#titleName {
+		font-size: 60px;
+	}
+}
+@media only screen and (min-width: 1144px) {
+
+	
+	#titleName {
+		font-size: 80px;
+	}
+	.thumbnail{
+		width:300px;
+		height:200px;
+	}
+	.imageSet{
+		width:310px;
 	}
 
-	.media768px{
-		background-color:#EDD49A;
-	}
-
-	.media480px{
-		background-color:#EFEF34;
-	}
-
-	.media300px{
-		background-color:#82EAFF;
-	}
-
-	.media1140px, .media768px, .media480px, .media300px{
-		padding:15px;
-	}
-
-	p{
-		margin:0 0 20px 0;
-	}
-
-	.clearb{
-		clear:both;
-	}
-	/* misc end */
-
-
-
-
-
-
-	/* header start */
-	#mainHeader{
-		background-color:#82EAFF;
-		padding:0.5em;
-		overflow:auto;
-	}
-
-	/* to make our logo resize automatically */
-	#responsiveLogo{
-		width:100%;
-	}
-
-	#responsiveLogo img{
-		max-height: 100%;
-		max-width: 100%;
-	}
-	/* header end */
-
-
-
-
-
-	/* navigation start */
-	nav{
-		float:left;
-		width:100%;
-	}
-
-	nav ul{
-		list-style-type:none;
-		padding:0;
-	}
-
-	nav ul li{
-
-	}
-
-	nav ul li a{
-		background-color:green;
-		border:thin solid #fff;
-		color:#fff;
-		display:block;
-		height:3em;
-		line-height:3em;
-		text-align:center;
-		text-decoration:none;
-		width:100%;
-	}
-
-	nav ul li a:hover{
-		background-color:yellow;
-		color:#000;
-	}
-	/* navigation end */
-
-
-
-
-
-	/* middle section start */
-	#mainSection{
-		background-color: #D9F8F2;
-		float: left;
-		width: 96%;
-	}
-
-	#sideBox1{
-		background-color: #C9A449;
-		width: 96%;
-	}
-
-	#mainSection, #sideBox1{
-		overflow: auto;
-		padding:2%;
-	}
-	/* middle section end */
-
-
-
-	/* footer start */
-	footer{
-		background-color:orange;
-		height:50px;
-		line-height:50px;
-		text-align:center;
-		width:100%;
-	}
-
-	/*style above is for smallest screens. Stuff below is by increasing order
-	/*Tablets*/
-	@media only screen and (min-width: 480px) {
-		#titleName {
-			font-size: 80px;
-		}
-	}
-	@media only screen and (min-width: 720px) {
-		#titleName {
-			font-size: 120px;
-		}
-	}
-	@media only screen and (min-width: 1144px) {
-		#titleName {
-			font-size: 140px;
-		}
-
-	}
+}
